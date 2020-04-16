@@ -1,0 +1,252 @@
+html, body {
+	height: 100%;
+}
+
+table.table td a {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 5px;
+	min-width: 24px;
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+	height: 100%;
+	width: 210px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #1d1d1d;
+	opacity: 90%;
+	overflow-x: hidden;
+	padding-top: 16px;
+	color: #c7c7c7;
+	-webkit-box-shadow: 6px 5px 20px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 6px 5px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sidebar-footer {
+	height: 100px;
+	width: 210px;
+	position: fixed;
+	z-index: 2;
+	top: 90%;
+	left: 0;
+	background-color: #0e0e0e;
+}
+
+.role {
+	font-size: 15px;
+}
+
+.user-name {
+	font-size: 20px;
+}
+
+hr {
+	margin: 5px;
+	display: block;
+	height: 0.5px;
+	border: 0;
+	border-top: 1px solid #999595;
+}
+
+/* Style sidebar links */
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #c4c4c4;
+	display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+	color: #ffffff;
+}
+
+/*  Style the img in sidebar */
+.sidebar img {
+	border-radius: 40px;
+	width: 80px;
+	height: auto;
+}
+
+.sidebar-toggle {
+	margin-left: 208px;
+	height: 40px;
+	width: 40px;
+	margin-top: 23%;
+	background-color: #1d1d1d;
+	opacity: 70%;
+	border-radius: 5px;
+	float: left;
+	-webkit-box-shadow: 6px 5px 20px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 6px 5px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+.btn-sidebar-toggle {
+	padding: 8px 0px 5px 18px;
+	color: #e8fde9;
+}
+
+.btn-sidebar-toggle:hover {
+	padding: 8px 0px 5px 18px;
+	color: #18def8;
+}
+
+/* flex box*/
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-container div {
+	margin: 10px;
+	padding: 3px;
+	font-size: 20px;
+}
+
+.flex-container-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-container-item>div {
+	margin: 1px;
+	font-size: 20px;
+}
+
+.flex-container-item-text {
+	
+}
+
+.container-main {
+	width: 50%;
+	height: 100%;
+	min-height: 100vh;
+	float: left;
+	border-right: 2px solid #29cbe7;
+}
+
+.container-main div {
+	padding-top: 5px;
+	font-size: 20px;
+}
+
+.container-main-col {
+	min-height: 50vh;
+	width: 100%;
+	border: 1px solid #29cbe7;
+	float: left;
+}
+
+.container-main-col div {
+	padding: 1px;
+	font-size: 20px;
+}
+
+.btn-margin a {
+	margin: 3px;
+	font-size: 20px;
+	/* size of text inside btn*/
+}
+
+.btn-item-margin {
+	font-size: 20px;
+}
+
+.btn-item-margin a {
+	min-width: 98%;
+	margin	: 2px;
+	font-size: 20px;
+}
+
+.item-grid > div {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(5, 80px);
+	grid-auto-flow: row;
+}
+
+.category-grid > div {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(5, auto);
+	grid-auto-flow: row;
+}
+
+.full-item {
+	min-height : 98%;
+	padding-top: 25px;
+}
+
+
+#listItemDetail tbody {
+    display:block;
+    height:600px;
+    overflow:auto;
+}
+#listItemDetail thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+#listItemDetail thead {
+    width: calc( 100% - 1em )
+}
+.nav-item {
+	margin-block-end: 10px;
+	margin-left: 10px;
+}
+
+.nav-item a:hover {
+	color: #18def8;
+}
+
+/* .nav-item:hover .badge {
+    font-size: 12px;
+} */
+.badge {
+	margin-left: 20px;
+	margin-bottom: 8px;
+	font-size: 11px;
+}
+
+/* Style the main content */
+.main {
+	margin-left: 250px;
+	/* Same as the width of the sidenav */
+	padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+	.sidebar a {
+		font-size: 18px;
+	}
+}
+
+.kpx_socialButtons .kpx_btn-table {
+	background: #00aced;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.kpx_socialButtons .kpx_btn-table:hover {
+	background: #043d52
+}
+
+.kpx_socialButtons .kpx_btn-table:focus {
+	background: #fff;
+	color: #00aced;
+	border-color: #00aced;
+}
