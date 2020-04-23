@@ -1,4 +1,4 @@
-package com.java.Controller;
+package com.java.QnA.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
