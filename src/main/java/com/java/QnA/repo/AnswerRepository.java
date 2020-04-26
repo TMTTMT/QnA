@@ -9,6 +9,6 @@ import com.java.QnA.pojo.Question;
 
 public interface AnswerRepository extends JpaRepository<Question,Long> {
 
-	List<Answer> findByOrdersEquals(Question question, int i);
+	List<Answer> findByQuestionAndOrdersEquals(Question question, int orders);
 
 }

@@ -28,7 +28,7 @@ public class AnswerServiceImpl implements IAnswerService {
 		List<Answer> answerByQuestion = new ArrayList<>();
 		Optional<Question> question = questionRepository.findById(Long.parseLong(id));
 		if(question.isPresent()) {
-			answerByQuestion = answerRepository.findByOrdersEquals(question.get(), 1);
+			answerByQuestion = answerRepository.findByQuestionAndOrdersEquals(question.get(), 1);
 		}
 		return answerByQuestion;
 	}
