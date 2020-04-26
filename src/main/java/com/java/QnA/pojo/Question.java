@@ -27,9 +27,14 @@ public class Question {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long q_id;
 	
+	@Column(columnDefinition = "int default 0")
+	private Integer orders;
+	
 	@NotNull
 	@Column(columnDefinition = "TEXT")
 	private String question;
+	
+	
 	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "ques")
 	@JsonIgnore

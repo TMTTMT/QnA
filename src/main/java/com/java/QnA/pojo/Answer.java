@@ -32,6 +32,5 @@ public class Answer {
 //	@org.hibernate.annotations.Type(type="true_false")
 	@NotNull
 	@Column(columnDefinition = "BOOLEAN")
-	private boolean status;
-	
+	private Boolean status;
 }

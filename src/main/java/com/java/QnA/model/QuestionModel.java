@@ -16,6 +16,7 @@ import lombok.Setter;
 public class QuestionModel {
 	
 	private long id;
+	private Integer orders;
 	private String ques;
 	private List<Answer> answerList;
 	
