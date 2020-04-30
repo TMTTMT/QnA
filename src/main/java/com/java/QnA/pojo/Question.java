@@ -27,6 +27,7 @@ public class Question {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long q_id;
 	
+	@NotNull
 	@Column(columnDefinition = "int default 0")
 	private Integer orders;
 	
