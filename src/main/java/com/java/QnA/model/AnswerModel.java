@@ -13,9 +13,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class AnswerModel {
 	
-	private long id;
+	private long a_id;
 	private Question ques;
-	private String ans;
+	private String answer;
 	private boolean status;
 	
 }

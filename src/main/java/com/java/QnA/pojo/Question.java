@@ -35,12 +35,10 @@ public class Question {
 	@Column(columnDefinition = "TEXT")
 	private String question;
 	
-	
-	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "ques")
 	@JsonIgnore
 	private List<Answer> answerList;
 	
-	@Transient
-	private ArrayList<Answer> answer;
+	//@Transient
+	//private ArrayList<Answer> answer;
 }

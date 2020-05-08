@@ -25,6 +25,6 @@ public class Result {
 	
 	@NotNull
 	@Column(columnDefinition = "int")
-	private Integer orders;
+	private Integer corrects;
 	
 }

@@ -2,8 +2,6 @@ package com.java.QnA.model;
 
 import java.util.List;
 
-import com.java.QnA.pojo.Answer;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,9 +13,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class QuestionModel {
 	
-	private long id;
+	private long q_id;
 	private Integer orders;
-	private String ques;
-	private List<Answer> answerList;
+	private String question;
+	private List<AnswerModel> answerList;
 	
 }

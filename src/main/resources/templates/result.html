@@ -12,7 +12,11 @@
 </head>
 <body>
 
-	
+	<div id="container">
+		<div id="result">
+			<test-component :questions="questions"></test-component>
+		</div>
+	</div>
 
 	<script src="../../libs/jquery-3.1.1.min.js" type="text/javascript" th:src="@{libs/jquery-3.1.1.min.js}"></script>
     <script src="../../libs/vue.js" type="text/javascript" th:src="@{libs/vue.js}"></script>
@@ -21,6 +25,6 @@
     <script src="../../libs/axios.js" type="text/javascript" th:src="@{libs/axios.js}"></script>
     <script src="../../libs/bootstrap.min.js" type="text/javascript" th:src="@{libs/bootstrap.min.js}"></script>
     <script src="../../libs/material.min.js" type="text/javascript" th:src="@{libs/material.min.js}"></script>
-    <script type="text/javascript" src="../../js/transaction.js" th:src="@{js/transaction.js}"></script>
+    <script type="text/javascript" th:src="@{js/result.js}"></script>
 </body>
 </html>

@@ -1,5 +1,9 @@
 package com.java.QnA.service;
 
-public interface IQuestionService {
+import java.util.List;
 
+import com.java.QnA.model.QuestionModel;
+
+public interface IQuestionService {
+	public List<QuestionModel> getAllQuestion();
 }

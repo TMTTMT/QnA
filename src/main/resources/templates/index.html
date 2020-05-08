@@ -12,7 +12,19 @@
 </head>
 <body>
 
-	<div class="container">Hello World!!!</div>
+	<div class="container">
+		<div class = "header" style = "text-align: center">
+			<h1>Kiểm tra trắc nghiệm</h1>
+		</div>
+		<div>
+			<div id="candidate">
+				<input id="nameID" v-model="candidateName" type="text" class="form-control" placeholder="Full name">
+				<div class="text-center" style = "margin-top: 5px">
+                   	<button class="btn btn-secondary" id="btnSubmit" v-on:click="redirect">Bắt đầu thi</button>
+               	</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="../../libs/jquery-3.1.1.min.js" type="text/javascript" th:src="@{libs/jquery-3.1.1.min.js}"></script>
     <script src="../../libs/vue.js" type="text/javascript" th:src="@{libs/vue.js}"></script>
@@ -21,6 +33,6 @@
     <script src="../../libs/axios.js" type="text/javascript" th:src="@{libs/axios.js}"></script>
     <script src="../../libs/bootstrap.min.js" type="text/javascript" th:src="@{libs/bootstrap.min.js}"></script>
     <script src="../../libs/material.min.js" type="text/javascript" th:src="@{libs/material.min.js}"></script>
-    <script type="text/javascript" src="../../js/transaction.js" th:src="@{js/transaction.js}"></script>
+    <script type="text/javascript" th:src="@{js/index.js}"></script>
 </body>
 </html>
