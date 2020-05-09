@@ -17,11 +17,5 @@ public class AnswerController {
 	
 	@Autowired
 	IAnswerService answerService;
-
-	@RequestMapping(value = "/getAnswerByQuestion")
-	@ResponseBody
-	public List<Answer> getAnswerByQuestion( @RequestParam("answerQuestionId") String answerQuestionId ) {
-		return answerService.getAnswerByQuestion(answerQuestionId);
-	}
 	
 }

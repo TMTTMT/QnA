@@ -1,0 +1,26 @@
+1. Đã hoàn thành: - lấy question và answer kèm theo từ database lên view
+
+2. Chưa hoàn thành: - Pagination ( chỉ hiển thị 1 câu hỏi và các câu trả lời kèm theo )
+					- kiểm tra đúng sai và lưu kết quả vào database
+					- lấy kết quả từ database hiển thị lên view
+					
+3. Các thắc mắc: - em định lưu tên thí sinh vào database trước sau đó đó kiểm tra kết quả và lưu kết quả thêm vào sau ( chưa biết có khả năng không )
+				 - hoặc lưu tên tạm vào đâu đó rồi sau khi kiểm tra kết quả bài thi rồi lưu tên và kết quả vào database.
+				 - em có nên tạo thêm table nào nữa để tiện lợi hơn ?
+				 
+4. hướng dẫn run: - tạo 1 database có tên test
+				  - run as spring boot app
+				  - thêm data vào databse
+				  	ví dụ: + question: q_id	|	orders	|	question
+				  						1		1			đang ở đâu ?
+				  						2		0			đang làm gì ?
+				  						
+				  		   + answer:   a_id	|	answer	|	status	|	q_id
+				  		   				1		A1			true		1
+				  		   				2		B1			false		1
+				  		   				3		C1			false		1
+				  		   				4		A2			false		2
+				  		   				5		B2			true		2
+				  		   				6		C2			true		2
+				  		   				
+				  - http://localhost:8070/

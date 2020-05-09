@@ -23,14 +23,4 @@ public class AnswerServiceImpl implements IAnswerService {
 	@Autowired
 	private QuestionRepository questionRepository;
 
-	@Override
-	public List<Answer> getAnswerByQuestion(String id) {
-		List<Answer> answerByQuestion = new ArrayList<>();
-		Optional<Question> question = questionRepository.findById(Long.parseLong(id));
-		if(question.isPresent()) {
-			answerByQuestion = answerRepository.findByQuestionAndOrdersEquals(question.get(), 1);
-		}
-		return answerByQuestion;
-	}
-
 }
